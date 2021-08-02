@@ -8,8 +8,8 @@ tracks_size = [1, 2, 3]
 print("Starting...")
 
 for size in tracks_size:
-    pn_traces, pn_states, pn_arcs = run_dfs_pn(size, 6*size)
-    bp_traces, bp_states, bp_arcs = run_dfs_bp(size, 6*size)
+    pn_traces, pn_states, pn_arcs = run_dfs_pn(size, 2)
+    bp_traces, bp_states, bp_arcs = run_dfs_bp(size, 2)
     print("states bp:", bp_states)
     print("states pn:", pn_states)
     print("arcs bp:", bp_arcs)
