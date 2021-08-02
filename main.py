@@ -5,6 +5,7 @@ from dfs_pn import run_dfs_pn
 from dfs_bp import run_dfs_bp
 
 tracks_size = [1, 2, 3]
+print("Starting...")
 
 for size in tracks_size:
     pn_traces, pn_states, pn_arcs = run_dfs_pn(size, 6*size)
