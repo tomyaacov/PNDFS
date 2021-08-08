@@ -4,7 +4,7 @@ import sys, threading
 from dfs_pn import run_dfs_pn
 from dfs_bp import run_dfs_bp
 
-tracks_size = [1, 2, 3]
+tracks_size = [3]
 print("Starting...")
 
 for size in tracks_size:
