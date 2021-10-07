@@ -4,12 +4,12 @@ import sys, threading
 from dfs_pn import run_dfs_pn
 from dfs_bp import run_dfs_bp
 
-tracks_size = [3]
+tracks_size = [1,2]
 print("Starting...")
 
 for size in tracks_size:
-    pn_traces, pn_states, pn_arcs = run_dfs_pn(size, 6*size)
-    bp_traces, bp_states, bp_arcs = run_dfs_bp(size, 6*size)
+    pn_traces, pn_states, pn_arcs = run_dfs_pn(size, size*3)
+    bp_traces, bp_states, bp_arcs = run_dfs_bp(size, size*3)
     print("states bp:", bp_states)
     print("states pn:", pn_states)
     print("arcs bp:", bp_arcs)
